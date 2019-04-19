@@ -56,7 +56,7 @@ io.on('connection', (sockeet) => {
 })
 
 mongoose.connect(dburl, (err) => {
-    console.log('mongo db connection', err);
+    console.log('mongo db connection', { useNewUrlParser: true }, err);
 });
 
 var server = http.listen(3000, () => {
