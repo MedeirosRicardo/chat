@@ -55,7 +55,7 @@ io.on('connection', (sockeet) => {
     console.log('a user connected');
 })
 
-mongoose.connect(dburl, { useNewUrlParser: true }, (err) => {
+mongoose.connect(dburl, (err) => {
     console.log('mongo db connection', err);
 });
 
