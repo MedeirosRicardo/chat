@@ -37,12 +37,12 @@
     }
 
     function getMessages() {
-        $.get('http://arnin-chat-arnin-chat.1d35.starter-us-east-1.openshiftapps.com/messages', (data) => {
+        $.get('https://arnin-chat.herokuapp.com/messages', (data) => {
             data.forEach(addMessage);
         });
     }
 
     function postMessage(message) {
-        $.post('http://arnin-chat-arnin-chat.1d35.starter-us-east-1.openshiftapps.com/messages', message);
+        $.post('https://arnin-chat.herokuapp.com/messages', message);
     }
 </script>
