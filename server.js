@@ -59,6 +59,6 @@ mongoose.connect(dburl, (err) => {
     console.log('mongo db connection', { useNewUrlParser: true }, err);
 });
 
-var server = http.listen(8080, () => {
+var server = http.listen(process.env.PORT, () => {
     console.log('server is listening on port', server.address().port)
 });
